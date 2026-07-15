@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { readArchiveReceipt, saveToArchive, type ArchiveReceipt } from '../utils/archiveSave'
 import { readReflectionEntries, type ReflectionEntry } from '../utils/reflections'
 import { downloadRewindAsJpg, downloadRewindAsPdf } from '../utils/rewindExport'
 import '../reflectionFeatures.css'
@@ -18,6 +19,9 @@ export default function CreditsPage({ visitorName, onRestart }: Props) {
   const [entries, setEntries] = useState<ReflectionEntry[]>(readReflectionEntries)
   const [exporting, setExporting] = useState<ExportFormat | null>(null)
   const [exportError, setExportError] = useState('')
+  const [archiving, setArchiving] = useState(false)
+  const [archiveError, setArchiveError] = useState('')
+  const [archiveReceipt, setArchiveReceipt] = useState<ArchiveReceipt | null>(readArchiveReceipt)
 
   useEffect(() => {
     const refresh = () => setEntries(readReflectionEntries())
@@ -45,6 +49,18 @@ export default function CreditsPage({ visitorName, onRestart }: Props) {
       setExportError(error instanceof Error ? error.message : 'Field Notes could not be exported on this device.')
     } finally {
       setExporting(null)
+    }
+  }
+
+  const shareToArchive = async () => {
+    setArchiving(true)
+    setArchiveError('')
+    try {
+      setArchiveReceipt(await saveToArchive(visitorName, entries))
+    } catch (error) {
+      setArchiveError(error instanceof Error ? error.message : 'The archive could not be reached — please try again.')
+    } finally {
+      setArchiving(false)
     }
   }
 
@@ -103,7 +119,25 @@ export default function CreditsPage({ visitorName, onRestart }: Props) {
               </button>
             </div>
             {exportError && <p className="rewind-export-error" role="alert">{exportError}</p>}
-            <p className="rewind-privacy">MADE ON THIS DEVICE · NOT UPLOADED</p>
+
+            <div className="rewind-archive">
+              <button type="button" onClick={shareToArchive} disabled={archiving}>
+                {archiving ? 'SAVING TO THE ARCHIVE…'
+                  : archiveReceipt ? 'SAVE TO THE ARCHIVE AGAIN' : 'SAVE TO THE EXHIBITION ARCHIVE'}
+              </button>
+              <p className="rewind-archive-note">
+                {archiveReceipt
+                  ? `SHARED WITH THE EXHIBITION ARCHIVE ✓ · ${archiveReceipt.entries} RESPONSE${archiveReceipt.entries === 1 ? '' : 'S'}`
+                  : 'OPTIONAL · SHARES YOUR NAME AND WRITTEN ANSWERS WITH THE EXHIBITION ARCHIVE'}
+              </p>
+              {archiveError && <p className="rewind-export-error" role="alert">{archiveError}</p>}
+            </div>
+
+            <p className="rewind-privacy">
+              {archiveReceipt
+                ? 'FIELD NOTES MADE ON THIS DEVICE · YOUR ANSWERS ARE ALSO IN THE ARCHIVE'
+                : 'MADE ON THIS DEVICE · NOT UPLOADED'}
+            </p>
           </>
         ) : (
           <div className="rewind-empty">

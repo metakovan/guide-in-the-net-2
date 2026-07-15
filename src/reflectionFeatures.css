@@ -368,6 +368,43 @@
   cursor: wait;
 }
 
+.rewind-archive {
+  margin-top: 12px;
+}
+
+.rewind-archive button {
+  width: 100%;
+  min-height: 48px;
+  padding: 9px 10px 7px;
+  border: 1px solid rgba(120, 146, 255, .82);
+  border-radius: 999px;
+  background: transparent;
+  color: #aebdff;
+  font-family: var(--header);
+  font-size: 11px;
+  line-height: 1.08;
+  cursor: pointer;
+}
+
+.rewind-archive button:disabled {
+  opacity: .52;
+  cursor: wait;
+}
+
+.rewind-archive button:focus-visible {
+  outline: 3px solid #aebdff;
+  outline-offset: 3px;
+}
+
+.rewind-archive-note {
+  margin: 10px 0 0;
+  color: rgba(174, 189, 255, .78);
+  font-family: var(--header);
+  font-size: 8px;
+  line-height: 1.35;
+  letter-spacing: .07em;
+}
+
 .rewind-privacy,
 .rewind-export-error {
   margin: 16px 0 0;
