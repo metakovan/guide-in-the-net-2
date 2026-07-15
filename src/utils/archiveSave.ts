@@ -12,6 +12,35 @@ const GUIDE_VERSION = '0.8.0'
 export type ArchiveReceipt = {
   savedAt: string
   entries: number
+  uuid: string
+}
+
+export type ArchivedReflection = {
+  guestName: string
+  savedAt: string
+  entries: Array<{ section?: string; source?: string; prompt: string; response: string; order?: number }>
+}
+
+// The revisit link: reopens the credits page anywhere and rehydrates the saved answers from the archive.
+// The crypto-random uuid is the capability — only the visitor who saved holds this link.
+export function rewindLink(receipt: ArchiveReceipt): string {
+  return `${window.location.origin}/guide/?screen=credits&rewind=${receipt.savedAt.slice(0, 10)}.${receipt.uuid}`
+}
+
+export function parseRewindParam(): { day: string; uuid: string } | null {
+  const raw = new URLSearchParams(window.location.search).get('rewind')
+  if (!raw) return null
+  const match = raw.match(/^(\d{4}-\d{2}-\d{2})\.([0-9a-f-]{36})$/i)
+  return match ? { day: match[1], uuid: match[2].toLowerCase() } : null
+}
+
+export async function fetchArchivedReflection(day: string, uuid: string): Promise<ArchivedReflection> {
+  const r = await fetch(`/visitors/reflections/${day}/${uuid}`)
+  const d = await r.json().catch(() => ({}) as { ok?: boolean; error?: string })
+  if (r.status !== 200 || !d.ok) {
+    throw new Error(d.error || 'This link couldn’t be opened — please try again.')
+  }
+  return { guestName: d.guest_name || '', savedAt: d.saved_at || '', entries: d.entries || [] }
 }
 
 function randomUuid(): string {
@@ -47,7 +76,9 @@ export function readArchiveReceipt(): ArchiveReceipt | null {
     const stored = localStorage.getItem(ARCHIVE_RECEIPT_KEY)
     if (!stored) return null
     const parsed: unknown = JSON.parse(stored)
-    if (parsed && typeof parsed === 'object' && typeof (parsed as ArchiveReceipt).savedAt === 'string') {
+    if (parsed && typeof parsed === 'object'
+      && typeof (parsed as ArchiveReceipt).savedAt === 'string'
+      && typeof (parsed as ArchiveReceipt).uuid === 'string') {
       return parsed as ArchiveReceipt
     }
   } catch {
@@ -63,8 +94,9 @@ function sleep(ms: number) {
 export async function saveToArchive(visitorName: string, entries: ReflectionEntry[]): Promise<ArchiveReceipt> {
   if (entries.length === 0) throw new Error('There are no written answers to share yet.')
 
+  const uuid = archiveUuid()
   const body = JSON.stringify({
-    uuid: archiveUuid(),
+    uuid,
     guest_name: visitorName,
     completed_at: new Date().toISOString(),
     guide_version: GUIDE_VERSION,
@@ -89,7 +121,7 @@ export async function saveToArchive(visitorName: string, entries: ReflectionEntr
       if (response.status === 200) {
         const d = await response.json().catch(() => null)
         if (d?.ok) {
-          const receipt: ArchiveReceipt = { savedAt: d.saved_at, entries: d.entries }
+          const receipt: ArchiveReceipt = { savedAt: d.saved_at, entries: d.entries, uuid }
           try {
             localStorage.setItem(ARCHIVE_RECEIPT_KEY, JSON.stringify(receipt))
           } catch {

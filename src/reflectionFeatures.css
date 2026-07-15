@@ -405,6 +405,58 @@
   letter-spacing: .07em;
 }
 
+.rewind-archive-saved {
+  border: 1px solid rgba(120, 146, 255, .45);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.rewind-archive-saved .rewind-archive-note:first-child {
+  margin: 0;
+  color: #aebdff;
+}
+
+.rewind-archive-ref {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, .66);
+  font-family: var(--header);
+  font-size: 8px;
+  letter-spacing: .07em;
+  word-break: break-all;
+}
+
+.rewind-archive-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.rewind-archive-link input {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(120, 146, 255, .45);
+  border-radius: 10px;
+  background: rgba(10, 14, 30, .6);
+  color: #dfe6ff;
+  font-family: ui-monospace, 'Courier New', monospace;
+  font-size: 11px;
+}
+
+.rewind-archive-link button {
+  min-height: 40px;
+  padding: 8px 14px 6px;
+  border: 1px solid rgba(120, 146, 255, .82);
+  border-radius: 999px;
+  background: #aebdff;
+  color: #050806;
+  font-family: var(--header);
+  font-size: 10px;
+  line-height: 1.08;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 .rewind-privacy,
 .rewind-export-error {
   margin: 16px 0 0;
