@@ -15,7 +15,7 @@ const PAGE_WIDTH = 1240
 const PAGE_HEIGHT = 1754
 const PAGE_PADDING = 78
 const PAGE_BOTTOM = 92
-const BRAND_LOGO_SRC = '/assets/upper-corner-logo-transparent.png'
+const BRAND_LOGO_SRC = '/guide/assets/upper-corner-logo-transparent.png'
 
 function groupEntries(entries: ReflectionEntry[]): RewindGroup[] {
   const groups: RewindGroup[] = []

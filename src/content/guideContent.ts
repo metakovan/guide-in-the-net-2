@@ -86,7 +86,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleAlign: 'left',
     titleSize: '31px',
     image: {
-      src: '/assets/works/safe-entry.jpg',
+      src: '/guide/assets/works/safe-entry.jpg',
       alt: 'A visitor standing before Heman Chong’s painted SafeEntry QR code installation',
       position: 'center 47%',
       aspect: '3 / 2',
@@ -118,7 +118,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleAlign: 'right',
     titleSize: '29px',
     image: {
-      src: '/assets/works/history-of-intelligence.jpg',
+      src: '/guide/assets/works/history-of-intelligence.jpg',
       alt: 'Ho Rui An’s wall-sized diagram A History of Intelligence in ((South)(East)) Asia',
       position: 'center 42%',
       aspect: '1.58 / 1',
@@ -150,7 +150,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleAlign: 'right',
     titleSize: '38px',
     image: {
-      src: '/assets/works/future-you.jpg',
+      src: '/guide/assets/works/future-you.jpg',
       alt: 'A diagram showing a younger person in conversation with an AI-generated older future self',
       position: 'center',
       aspect: '1.45 / 1',
@@ -183,7 +183,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleAlign: 'left',
     titleSize: '33px',
     image: {
-      src: '/assets/works/impactbench-cereallm.jpg',
+      src: '/guide/assets/works/impactbench-cereallm.jpg',
       alt: 'A collection of fictional CereaLLM cereal boxes carrying AI nutrition labels',
       position: 'center',
       aspect: '16 / 9',
@@ -216,7 +216,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleAlign: 'left',
     titleSize: '30px',
     image: {
-      src: '/assets/works/grace-quek-cloning-ai.jpg',
+      src: '/guide/assets/works/grace-quek-cloning-ai.jpg',
       alt: 'Promotional artwork for Grace Quek’s Art in the Age of Human Cloning performance lecture',
       position: 'center',
       aspect: '16 / 9',
@@ -250,7 +250,7 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
     titleAlign: 'left',
     titleSize: '30px',
     image: {
-      src: '/assets/works/bussytemple-altar.jpg',
+      src: '/guide/assets/works/bussytemple-altar.jpg',
       alt: 'A dark BussyTemple gathering with amber beams of light cutting through a crowded dance floor',
       position: 'center 35%',
       aspect: '3 / 2',
@@ -283,7 +283,7 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
     titleAlign: 'right',
     titleSize: '41px',
     image: {
-      src: '/assets/works/traces-in-the-net.jpg',
+      src: '/guide/assets/works/traces-in-the-net.jpg',
       alt: 'The Traces interface showing floating coloured trace orbs and controls for exploring and listening',
       position: 'center 24%',
       aspect: '4 / 3',
@@ -319,7 +319,7 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
     titleSize: '44px',
     heroLabel: 'ALTERNATE-LIFE PHOTOBOOTH',
     image: {
-      src: '/assets/works/asia-maxxing.jpg',
+      src: '/guide/assets/works/asia-maxxing.jpg',
       alt: 'A diagram of an imagined Asia Maxxing life across home, café, commute, work and leisure platforms',
       position: 'center',
       aspect: '16 / 9',
@@ -354,7 +354,7 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
     titleSize: '46px',
     heroLabel: 'DIGITAL DIVINATION INTERFACE',
     image: {
-      src: '/assets/works/hexagram-today.png',
+      src: '/guide/assets/works/hexagram-today.png',
       alt: 'A field of I Ching hexagrams with several symbols glowing in electric blue',
       position: 'center',
       aspect: '1 / 1',
@@ -388,7 +388,7 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
     titleSize: '38px',
     heroLabel: 'SPECULATIVE ARCHIVE',
     image: {
-      src: '/assets/works/xo.jpeg',
+      src: '/guide/assets/works/xo.jpeg',
       alt: 'Fyerool Darma’s XO installation: a monumental illuminated terrain model surrounded by industrial structures',
       position: 'center',
       aspect: '16 / 9',

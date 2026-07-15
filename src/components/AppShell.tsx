@@ -39,14 +39,14 @@ export default function AppShell({
     <div className={`shell shell-${resolvedTone} ${immersive ? 'shell-immersive' : ''}`}>
       <header className="topbar">
         <button type="button" className="corner-logo-button" onClick={onMenu} aria-label="Open section menu">
-          <img className="corner-logo" src="/assets/upper-corner-logo-transparent.png" alt="Islands in the Net" />
+          <img className="corner-logo" src="/guide/assets/upper-corner-logo-transparent.png" alt="Islands in the Net" />
         </button>
         <div className="topbar-actions">
           <button type="button" onClick={onInfo} className="icon-button" aria-label="Exhibition information">
-            <img src="/assets/info-icon.png" alt="" />
+            <img src="/guide/assets/info-icon.png" alt="" />
           </button>
           <button type="button" onClick={onSettings} className="icon-button" aria-label="Guide settings">
-            <img src="/assets/settings-icon.png" alt="" />
+            <img src="/guide/assets/settings-icon.png" alt="" />
           </button>
         </div>
       </header>
@@ -54,7 +54,7 @@ export default function AppShell({
       {!hideBottom && (
         <nav className="bottom-nav" aria-label="Guide navigation">
           <button type="button" className="nav-menu" onClick={onMenu} aria-label="Open section menu">
-            <img src="/assets/list.svg" alt="" />
+            <img src="/guide/assets/list.svg" alt="" />
           </button>
           <button type="button" className="nav-button nav-back" onClick={onBack} disabled={!onBack}>
             {backLabel}

@@ -63,37 +63,37 @@ const introParagraphs = [
 
 const guideActions = [
   {
-    icon: '/assets/linger.png',
+    icon: '/guide/assets/linger.png',
     iconHeight: '146px',
     label: 'LINGER',
     text: 'Stay with an idea beyond your first reaction.',
   },
   {
-    icon: '/assets/form-thoughts.png',
+    icon: '/guide/assets/form-thoughts.png',
     iconHeight: '60px',
     label: 'TAKE A POSITION',
     text: 'Form your own view. Change it if the work gives you reason.',
   },
   {
-    icon: '/assets/converse.png',
+    icon: '/guide/assets/converse.png',
     iconHeight: '70px',
     label: 'JOIN IN',
     text: 'Talk with someone, vote, or leave a thought for whoever comes next.',
   },
   {
-    icon: '/assets/reflect.png',
+    icon: '/guide/assets/reflect.png',
     iconHeight: '95px',
     label: 'PAUSE',
     text: 'Sit, listen, read, write—or do nothing for a while.',
   },
   {
-    icon: '/assets/return.png',
+    icon: '/guide/assets/return.png',
     iconHeight: '108px',
     label: 'RETURN',
     text: 'Return after dark for screenings, performances, talks and late-night takeovers.',
   },
   {
-    icon: '/assets/share.png',
+    icon: '/guide/assets/share.png',
     iconHeight: '118px',
     label: 'SHARE, OR DON’T',
     text: 'Photograph and post, remix, or keep the experience offline. Feed the algorithm with #IslandsInTheNetSG',
@@ -101,14 +101,14 @@ const guideActions = [
 ]
 
 const guideImageUrls = Array.from(new Set([
-  '/assets/main-splash-logo.png',
-  '/assets/upper-corner-logo-transparent.png',
-  '/assets/info-icon.png',
-  '/assets/settings-icon.png',
-  '/assets/map-step-1.png',
-  '/assets/map-step-2.png',
-  '/assets/map-step-3.png',
-  '/assets/map-step-4.png',
+  '/guide/assets/main-splash-logo.png',
+  '/guide/assets/upper-corner-logo-transparent.png',
+  '/guide/assets/info-icon.png',
+  '/guide/assets/settings-icon.png',
+  '/guide/assets/map-step-1.png',
+  '/guide/assets/map-step-2.png',
+  '/guide/assets/map-step-3.png',
+  '/guide/assets/map-step-4.png',
   ...guideActions.map(({ icon }) => icon),
   ...Object.values(sectionOneArtworks).flatMap(({ image }) => image ? [image.src] : []),
   ...Object.values(sectionTwoArtworks).flatMap(({ image }) => image ? [image.src] : []),
@@ -415,7 +415,7 @@ export default function App() {
             onBack={() => go('how')}
             onNext={() => go('section')}
           >
-            <MapScreen heading={`STEP INTO THE NET, ${displayName.toUpperCase()}.`} marker="one" image="/assets/map-step-1.png" alt="Map of the exhibition showing the route into You and the Net" note={['FOLLOW THE LIGHTS.', 'TAKE YOUR TIME.']} />
+            <MapScreen heading={`STEP INTO THE NET, ${displayName.toUpperCase()}.`} marker="one" image="/guide/assets/map-step-1.png" alt="Map of the exhibition showing the route into You and the Net" note={['FOLLOW THE LIGHTS.', 'TAKE YOUR TIME.']} />
           </AppShell>
         )}
 
@@ -489,7 +489,7 @@ export default function App() {
 
         {screen === 'mapTwo' && (
           <AppShell blue onMenu={() => setMenuOpen(true)} onInfo={() => setDialog('info')} onSettings={() => setDialog('settings')} onBack={() => go('sectionTwoIntro')} onNext={() => go('commons')}>
-            <MapScreen heading={`MAKE YOUR WAY TO THE COMMONS, ${displayName.toUpperCase()}.`} marker="two" image="/assets/map-step-2.png" alt="Map of the exhibition showing the route into Together in the Net" note={['FOLLOW THE CURVE TO THE COMMONS.', 'THIS PART OF THE EXHIBITION IS MADE TO BE SHARED.']} />
+            <MapScreen heading={`MAKE YOUR WAY TO THE COMMONS, ${displayName.toUpperCase()}.`} marker="two" image="/guide/assets/map-step-2.png" alt="Map of the exhibition showing the route into Together in the Net" note={['FOLLOW THE CURVE TO THE COMMONS.', 'THIS PART OF THE EXHIBITION IS MADE TO BE SHARED.']} />
           </AppShell>
         )}
 
@@ -525,7 +525,7 @@ export default function App() {
 
         {screen === 'mapThree' && (
           <AppShell tone="green" onMenu={() => setMenuOpen(true)} onInfo={() => setDialog('info')} onSettings={() => setDialog('settings')} onBack={() => go('sectionThreeIntro')} onNext={() => go('asiaMaxxing')}>
-            <MapScreen heading={`FIND YOURSELF HERE, ${displayName.toUpperCase()}.`} marker="three" image="/assets/map-step-3.png" alt="Map of the exhibition showing the route into Here in the Net" note={['FOLLOW THE DOTTED PATH.', 'THE FUTURE LOOKS DIFFERENT WHEN IT IS IMAGINED FROM HERE.']} />
+            <MapScreen heading={`FIND YOURSELF HERE, ${displayName.toUpperCase()}.`} marker="three" image="/guide/assets/map-step-3.png" alt="Map of the exhibition showing the route into Here in the Net" note={['FOLLOW THE DOTTED PATH.', 'THE FUTURE LOOKS DIFFERENT WHEN IT IS IMAGINED FROM HERE.']} />
           </AppShell>
         )}
 
@@ -555,7 +555,7 @@ export default function App() {
 
         {screen === 'mapFour' && (
           <AppShell tone="yellow" onMenu={() => setMenuOpen(true)} onInfo={() => setDialog('info')} onSettings={() => setDialog('settings')} onBack={() => go('readingRoomCover')} onNext={() => go('readingRoom')}>
-            <MapScreen heading={`WELCOME TO THE READING ROOM, ${displayName.toUpperCase()}.`} marker="four" image="/assets/map-step-4.png" alt="Map of the exhibition showing the route into the Futures Reading Room" note={['FOLLOW THE LIGHTS INTO THE ARCHIVE.', 'BEGIN ANYWHERE.']} />
+            <MapScreen heading={`WELCOME TO THE READING ROOM, ${displayName.toUpperCase()}.`} marker="four" image="/guide/assets/map-step-4.png" alt="Map of the exhibition showing the route into the Futures Reading Room" note={['FOLLOW THE LIGHTS INTO THE ARCHIVE.', 'BEGIN ANYWHERE.']} />
           </AppShell>
         )}
 
@@ -627,7 +627,7 @@ function CoverScreen({ reducedMotion, onStart }: { reducedMotion: boolean; onSta
       <IslandBlob className="cover-blob blob-c" variant={3} />
       <IslandBlob className="cover-blob blob-d" variant={1} />
       <div className="cover-content">
-        <img className="splash-logo" src="/assets/main-splash-logo.png" alt="Islands in the Net" />
+        <img className="splash-logo" src="/guide/assets/main-splash-logo.png" alt="Islands in the Net" />
         <p className="cover-tagline">A MEETING PLACE FOR SOUTHEAST ASIAN FUTURES:<br />EVERYDAY LIFE IN THE AGE OF AI, DATA &amp; MEMES</p>
         <button type="button" className="start-button" onClick={onStart}>START</button>
       </div>
