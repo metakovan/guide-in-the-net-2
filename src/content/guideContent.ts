@@ -76,7 +76,7 @@ export const sectionThreeIntro: SectionIntroContent = {
 export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'history' | 'future-you' | 'impactbench' | 'grace-quek'>, ArtworkContent> = {
   'safe-entry': {
     id: 'safe-entry',
-    title: 'SAFE ENTRY\n(VERSION 2.0–2.7)',
+    title: 'SAFE ENTRY V.2.5\n(2020)',
     artist: 'BY HEMAN CHONG',
     sequence: '01',
     total: '05',
@@ -87,14 +87,14 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleSize: '31px',
     image: {
       src: '/guide/assets/works/safe-entry.jpg',
-      alt: 'A visitor standing before Heman Chong’s painted SafeEntry QR code installation',
+      alt: 'A visitor standing before Heman Chong’s painted Safe Entry V.2.5 QR code installation',
       position: 'center 47%',
       aspect: '3 / 2',
     },
     description: [
-      'Heman Chong’s painting resembles one of the SafeEntry QR codes that became part of everyday life in Singapore during the COVID-19 pandemic. These codes functioned as invisible checkpoints: visitors scanned them to register their presence before entering shops, workplaces and public spaces.',
-      'Chong’s painted code does not lead to the national contact-tracing system. Instead, it opens Ambient Walking: Changi Airport Terminal 2: an hour-long video documenting the artist’s walk through the terminal during Singapore’s Circuit Breaker. Filmed while international travel had almost stopped, the video records an airport designed for movement at a moment of profound stillness.',
-      'By painstakingly translating a machine-readable code into paint, Chong brings a digital interface back into the realm of the handmade and bodily. The painting becomes image, gateway and historical document.',
+      'Chong’s painting is of a QR code. It references Singapore’s national SafeEntry check-in system, introduced during the COVID-19 pandemic to record visits to public venues. The work leads to an hour-long video from Chong’s Ambient Walking series, documenting a walk through Changi Airport Terminal 2 and uploaded to YouTube on April 30, 2020, the day before the terminal closed for renovation.',
+      'Opening Islands in the Net, Chong’s painting is a historical marker pointing to a specific moment of accelerated data collection and worldwide digitalisation that catalysed the development and adoption of artificial intelligence (AI) in recent years.',
+      'Existing simultaneously between YouTube and the physical gallery as both a virtual and a physical object, Chong’s work gives aesthetic form to one of the exhibition’s central propositions: that contemporary reality is produced through cybernetic networks that collapse the distinction between the virtual and the physical.',
     ],
     whyNow: [
       'Although SafeEntry belongs to the recent history of the pandemic, its underlying logic has not disappeared. Access to public life is increasingly mediated through machine-readable identities, permissions and systems of verification that operate largely beyond view.',
@@ -108,7 +108,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
   },
   history: {
     id: 'history',
-    title: 'A HISTORY OF\nINTELLIGENCE IN\n((SOUTH)(EAST)) ASIA',
+    title: 'A HISTORY OF\nINTELLIGENCE IN\n((SOUTH)(EAST)) ASIA\n(2025)',
     artist: 'BY HO RUI AN',
     sequence: '02',
     total: '05',
@@ -124,9 +124,8 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '1.58 / 1',
     },
     description: [
-      'Ho Rui An’s wall-sized diagram traces a history of computation and artificial intelligence in Southeast Asia from the 1940s to the present. Part timeline, part map and part counter-archive, the work connects technologies to the institutions, political ambitions and historical conditions through which they entered the region.',
-      'The work challenges the familiar story that digital technology travelled outward from a handful of laboratories and companies in the United States. Instead, it asks us to understand intelligence through the particular histories of Asia: histories shaped by colonialism, war, development, state-building, labour and global flows of capital and expertise.',
-      'Even the doubled brackets in the title resist a simple geographical boundary. Where does “East Asia” end and “Southeast Asia” begin, and who has the power to draw that line?',
+      'Ho’s visual graphic mobilises information as art. In being situated at the start of the exhibition Islands in the Net, it provides a historical map of the entanglements of intelligence, computation, and geopolitics across the region from the 1940s to 2025, giving us a foundational understanding of our present while offering a backdrop through which we can consider Southeast Asia’s possible technological futures.',
+      'Rather than treating artificial intelligence (AI) as a technological rupture, Ho’s work locates contemporary machine intelligence within longer histories of empire, logistics, development, and regional power. It reveals the inherited systems and associated spectres of empire, ideology, and geopolitics through which intelligence has been organised, measured, and operationalised across Southeast Asia.',
     ],
     whyNow: [
       'Conversations about AI often begin with the newest model release. This work begins elsewhere: with history.',
@@ -140,8 +139,8 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
   },
   'future-you': {
     id: 'future-you',
-    title: 'FUTURE YOU',
-    artist: 'BY MIT MEDIA LAB\nFT. RACHEL POONSIRIWONG',
+    title: 'FUTURE YOU\n(2024–NOW)',
+    artist: 'BY MIT MEDIA LAB',
     sequence: '03',
     total: '05',
     sectionLabel: 'YOU AND THE NET',
@@ -156,10 +155,9 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '1.45 / 1',
     },
     description: [
-      'Future You invites you to speak with an AI-generated version of yourself at around 60 years old.',
-      'The experience begins by asking about your present life, personal qualities, hopes and future goals. From this information, the system creates an age-progressed portrait and a speculative biography — or “synthetic memory” — connecting who you are now with someone you might plausibly become. You can then ask this future self questions, seek advice or reflect on the paths that might lead from the present to that imagined life.',
-      'The project draws upon psychological research into “future self-continuity”: the sense that the person we may become is connected to the person we are today. Previous research links a stronger connection to one’s future self with long-term behaviours such as saving, academic planning and greater wellbeing. Future You investigates whether generative AI can make that distant self feel more vivid, relatable and emotionally present.',
-      'Follow-on research is now exploring whether simulated future selves can support reflection around career paths and significant life decisions.',
+      'Future You is an AI digital-twin platform that invites people into conversations with possible versions of their future selves. Rather than predicting the future, Future You is designed to help people reflect on long-term goals, make better decisions today, and strengthen their sense of connection to who they may become. From information provided by the user, the AI system generates “future self memories”, backstories that the model references when speaking to the user.',
+      'Future You grew out of Prof. Pat Pataranutaporn’s doctoral research and thesis on Cyborg Psychology, which explores how AI systems shape human cognition, behaviour, and psychology, and aspires to find ways to encourage human flourishing. It is the product of research and collaboration by researchers within and outside MIT, including Pub and Rachel, who bring their unique perspectives to the project.',
+      'While Future You is a scientific research project that can be historicised in a long lineage of research into future selves that dates back to the 1960s, it is also a cultural project that speaks to our contemporary moment. It offers us a way to navigate the post-contemporary time complex, enabling us to speak to alternative future selves as a way of addressing our present. There are mental health benefits and the promise of an empowering tool for social mobility. It offers us pause and possibly a way out of being mere cogs in larger machines—whether that be the machinery and protocols of society or, more generally, the consumer-facing technologies that can manufacture our desires and impulses.',
     ],
     whyNow: [
       'AI is moving beyond answering questions. It is increasingly being positioned as a coach, confidant and guide: something that can help us plan careers, manage emotions or rehearse difficult conversations.',
@@ -173,7 +171,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
   },
   impactbench: {
     id: 'impactbench',
-    title: 'IMPACTBENCH ×\nCEREALLM',
+    title: 'OPEN BENCHMARK OF AI\nIMPACT ON HUMANS\n(IMPACTBENCH) × CEREALLMS\n(2025–NOW)',
     artist: 'BY MIT MEDIA LAB × RYAN HO',
     sequence: '04',
     total: '05',
@@ -184,16 +182,13 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     titleSize: '33px',
     image: {
       src: '/guide/assets/works/impactbench-cereallm.jpg',
-      alt: 'A collection of fictional CereaLLM cereal boxes carrying AI nutrition labels',
+      alt: 'A collection of fictional CereaLLMs cereal boxes carrying AI Nutrition Labels',
       position: 'center',
       aspect: '16 / 9',
     },
     description: [
-      'Most AI benchmarks ask how successfully a model can reason, calculate, retrieve information or complete a task. ImpactBench begins with a different question: What does an AI system do to the person using it?',
-      'The project evaluates AI across physical, psychological and societal dimensions of human wellbeing. It examines realistic, extended human–AI interactions in which effects such as dependency, diminished autonomy, manipulation or emotional harm may emerge gradually.',
-      'For this exhibition, these findings are presented as a shelf of fictional breakfast cereals. Familiar LLMs are reimagined as competing consumer brands, complete with slogans, activities and “nutrition labels” describing their possible effects on users.',
-      'Like products on a supermarket shelf, these labelled boxes ask visitors to look beyond branding and performance claims. An AI system may appear capable, convenient or appealing while still carrying less visible costs.',
-      'ImpactBench asks us to consider what we are consuming, what it is feeding us, and how it may shape us over time.',
+      'ImpactBench evaluates leading AI systems through an AI Nutrition Label that makes visible their potential impacts on people and society, including dimensions such as accuracy, safety, fairness, learning, well-being, agency, and social relationships. Rather than measuring only technical capability, it helps the public better understand how AI systems may influence human behaviour and cognition.',
+      'Presented here alongside the online research project are speculative cereal boxes that imagine the AI Nutrition Labels from ImpactBench. Developed by Ryan Ho in partnership with Pat Pataranutaporn, Rachel Poonsiriwong, and Chayapatr (Pub) Archiwaranguprok, these objects (affectionately nicknamed CereaLLMs) make physical the findings of the existing research, pointing to how AI is a human utility and the urgency of consensus and literacy around AI.',
     ],
     whyNow: [
       'As AI becomes a companion, teacher, adviser and mediator of everyday decisions, accuracy is no longer an adequate measure of quality. A system can provide a factually correct response while making someone less confident, more dependent or more isolated.',
@@ -206,7 +201,7 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
   },
   'grace-quek': {
     id: 'grace-quek',
-    title: 'ART IN THE AGE OF\nHUMAN CLONING & AI',
+    title: 'ART IN THE AGE OF\nHUMAN CLONING\n(2026)',
     artist: 'BY GRACE QUEK',
     sequence: '05',
     total: '05',
@@ -241,7 +236,7 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
   altar: {
     id: 'altar',
     title: 'F4NT4SY_H4RD_\nDR1VE://ALTAR\n(2026)',
-    artist: 'BY BUSSYTEMPLE',
+    artist: 'BY BUSSY TEMPLE\n(JO HO, ZENON, NYDIA, BRUCE AND MINSOO)',
     sequence: '01',
     total: '02',
     sectionLabel: 'TOGETHER IN THE NET',
@@ -273,8 +268,8 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
   },
   traces: {
     id: 'traces',
-    title: 'TRACES\nIN THE NET',
-    artist: 'BY RYAN HO,\nEMOTIONAL TECHNOLOGIES LAB\nAND VIGNESH SUNDARESAN',
+    title: 'TRACES\n(2026)',
+    artist: 'BY RYAN HO,\nEMOTIONAL TECHNOLOGIES LAB,\nVIGNESH SUNDARESAN (METAKOVAN)',
     sequence: '02',
     total: '02',
     sectionLabel: 'TOGETHER IN THE NET',
@@ -308,8 +303,8 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
 export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'hexagram' | 'xo'>, ArtworkContent> = {
   'asia-maxxing': {
     id: 'asia-maxxing',
-    title: 'ASIAMAXXING',
-    artist: 'BY WEIWEI XU',
+    title: 'ASIA MAXXING\n(2026)',
+    artist: 'BY WEIWEI HSU',
     sequence: '01',
     total: '03',
     sectionLabel: 'HERE IN THE NET',
@@ -343,8 +338,8 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
   },
   hexagram: {
     id: 'hexagram',
-    title: 'HEXAGRAM\nTODAY',
-    artist: 'BY WEIWEI XU',
+    title: 'ICHING\nHEXAGRAM\n(2026)',
+    artist: 'BY WEIWEI HSU',
     sequence: '02',
     total: '03',
     sectionLabel: 'HERE IN THE NET',

@@ -799,7 +799,7 @@ button {
   margin: 0 0 64px;
   font-family: var(--header);
   font-size: 35px;
-  line-height: .9;
+  line-height: 1.08;
   font-weight: 400;
   letter-spacing: .08em;
   text-align: center;
@@ -966,7 +966,7 @@ button {
   color: #fff;
   font-family: var(--header);
   font-size: clamp(36px, var(--artwork-title-size), 48px);
-  line-height: .82;
+  line-height: 1.04;
   font-weight: 400;
   letter-spacing: .035em;
   text-wrap: balance;
@@ -1190,7 +1190,7 @@ button {
   color: var(--accent);
   font-family: var(--header);
   font-size: 38px;
-  line-height: .85;
+  line-height: 1.08;
   letter-spacing: .04em;
 }
 
@@ -3288,7 +3288,7 @@ h3,
 .section-arrival h1,
 .section-arrival-two h1,
 .section-arrival-three h1 {
-  line-height: 1.04;
+  line-height: 1.08;
   font-weight: 400;
 }
 
@@ -3359,7 +3359,7 @@ h3,
   margin: 0;
   font-family: var(--header);
   font-size: clamp(34px, 10vw, 45px);
-  line-height: 1.02;
+  line-height: 1.08;
   font-weight: 400;
   letter-spacing: .018em;
   text-align: center;
@@ -3405,7 +3405,7 @@ h3,
 .artwork-page.artwork-hexagram .artwork-heading h1,
 .artwork-page.artwork-xo .artwork-heading h1 {
   font-family: var(--ui-sans);
-  line-height: .98;
+  line-height: 1.06;
   font-weight: 750;
   letter-spacing: -.045em;
 }
