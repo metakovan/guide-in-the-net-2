@@ -1146,16 +1146,6 @@ button {
   color: #0f0e0e;
 }
 
-.artwork-pullquote > span {
-  position: absolute;
-  top: -35px;
-  right: 10px;
-  color: rgba(255,255,255,.34);
-  font-family: Georgia, serif;
-  font-size: 180px;
-  line-height: 1;
-}
-
 .artwork-pullquote p {
   position: relative;
   z-index: 1;

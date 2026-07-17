@@ -45,9 +45,8 @@ export const sectionOneIntro: SectionIntroContent = {
   number: 'SECTION 1',
   title: 'YOU AND\nTHE NET',
   paragraphs: [
-    'Technology reaches us at an intimate scale: in the voice that answers, the score that judges, the portrait that predicts and the feed that learns what keeps us looking.',
-    'The works in this section examine what happens when systems speak as us, measure us and rehearse who we might become.',
-    'What do they reflect back—and which futures do they begin to prescribe? Where can they support agency, connection and care, and where do they create dependency?',
+    'Technology reaches us intimately: in the voice that answers, the score that judges, the portrait that predicts and the feed that learns what keeps us looking.',
+    'These works examine what happens when systems speak as us, measure us and rehearse who we might become. What do they reflect back—and which futures do they begin to prescribe?',
     'The question is not only what these technologies can do. It is what repeated use does to us.',
   ],
 }
@@ -56,9 +55,8 @@ export const sectionTwoIntro: SectionIntroContent = {
   number: 'SECTION 2',
   title: 'TOGETHER IN\nTHE NET',
   paragraphs: [
-    'No relationship with technology remains personal for long. A private choice becomes a data point; a post becomes an archive; a voice can become part of a shared memory.',
-    'Across a living altar, an emotional map and the Commons, this section asks you not only to look, but to add, listen, disagree and leave something behind.',
-    'A crowd becomes a community through participation, difference, care and the difficult work of staying in relation.',
+    'Technology rarely remains personal for long. A private choice becomes a data point; a post becomes an archive; a voice enters shared memory.',
+    'Across a living altar, an emotional map and the Commons, this section asks you to listen, contribute, disagree and leave something behind. Community is not automatic agreement. It is the ongoing work of participation, difference, care and exchange.',
     'What do we preserve? What do platforms flatten? What can many different lives build together?',
   ],
 }
@@ -66,10 +64,10 @@ export const sectionTwoIntro: SectionIntroContent = {
 export const sectionThreeIntro: SectionIntroContent = {
   number: 'SECTION 3',
   title: 'HERE IN\nTHE NET',
-  lead: 'Every story about technology begins somewhere: in a language, a belief, a history, an infrastructure and a relationship to power.',
+  lead: 'Every story about technology begins somewhere: in a language, belief, history, infrastructure and relationship to power.',
   paragraphs: [
-    'Here, code meets divination. AI rehearses Asian identities. Speculative archives refuse familiar divisions between nature and technology, body and data, past and future.',
-    'These works show technology being absorbed, translated and reinvented across Southeast Asia. They ask what becomes possible when the future is imagined from here, rather than imported from elsewhere.',
+    'Here, code meets divination; AI rehearses Asian identities; speculative archives refuse familiar divisions between nature and technology, body and data, past and future.',
+    'These works ask what becomes possible when technology is absorbed, translated and reinvented from Southeast Asia rather than imported from elsewhere.',
   ],
 }
 
@@ -93,17 +91,14 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
     },
     description: [
       'Chong’s painting is of a QR code. It references Singapore’s national SafeEntry check-in system, introduced during the COVID-19 pandemic to record visits to public venues. The work leads to an hour-long video from Chong’s Ambient Walking series, documenting a walk through Changi Airport Terminal 2 and uploaded to YouTube on April 30, 2020, the day before the terminal closed for renovation.',
-      'Opening Islands in the Net, Chong’s painting is a historical marker pointing to a specific moment of accelerated data collection and worldwide digitalisation that catalysed the development and adoption of artificial intelligence (AI) in recent years.',
-      'Existing simultaneously between YouTube and the physical gallery as both a virtual and a physical object, Chong’s work gives aesthetic form to one of the exhibition’s central propositions: that contemporary reality is produced through cybernetic networks that collapse the distinction between the virtual and the physical.',
+      'Opening Islands in the Net, Chong’s painting is a historical marker pointing to a specific moment of accelerated data collection and worldwide digitalisation. Existing simultaneously between YouTube and the physical gallery as both a virtual and physical object, the work gives aesthetic form to one of the exhibition’s central propositions: that contemporary reality is produced through cybernetic networks that collapse the distinction between the virtual and the physical.',
     ],
     whyNow: [
-      'Although SafeEntry belongs to the recent history of the pandemic, its underlying logic has not disappeared. Access to public life is increasingly mediated through machine-readable identities, permissions and systems of verification that operate largely beyond view.',
-      'As more of everyday life is organised through apps, digital wallets, facial recognition and seamless check-ins, this work asks how quickly exceptional technologies become ordinary infrastructure — and how habits of scanning, registering and surrendering data reshape our relationship to public space.',
+      'SafeEntry belongs to the recent history of the pandemic, but its underlying logic remains. Apps, digital wallets, facial recognition and seamless check-ins increasingly organise access to public life. The work asks how quickly exceptional technologies become ordinary infrastructure—and how habits of scanning, registering and surrendering data reshape our relationship with public space.',
     ],
     reflection: [
-      'What do you now scan, share or verify without giving it much thought?',
-      'When convenience depends on exchanging data, how freely are we choosing?',
       'Which technologies introduced as temporary or exceptional have become permanent?',
+      'When convenience depends on exchanging data, how freely are you choosing?',
     ],
   },
   history: {
@@ -124,17 +119,15 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '1.58 / 1',
     },
     description: [
-      'Ho’s visual graphic mobilises information as art. In being situated at the start of the exhibition Islands in the Net, it provides a historical map of the entanglements of intelligence, computation, and geopolitics across the region from the 1940s to 2025, giving us a foundational understanding of our present while offering a backdrop through which we can consider Southeast Asia’s possible technological futures.',
-      'Rather than treating artificial intelligence (AI) as a technological rupture, Ho’s work locates contemporary machine intelligence within longer histories of empire, logistics, development, and regional power. It reveals the inherited systems and associated spectres of empire, ideology, and geopolitics through which intelligence has been organised, measured, and operationalised across Southeast Asia.',
+      'Ho’s visual graphic mobilises information as art. Situated at the start of Islands in the Net, it maps the entanglements of intelligence, computation and geopolitics across the region from the 1940s to 2025.',
+      'Rather than treating artificial intelligence as a technological rupture, Ho’s work locates contemporary machine intelligence within longer histories of empire, logistics, development and regional power. It reveals the inherited systems and associated spectres of empire, ideology and geopolitics through which intelligence has been organised, measured and operationalised across Southeast Asia.',
     ],
     whyNow: [
-      'Conversations about AI often begin with the newest model release. This work begins elsewhere: with history.',
-      'What we now call “intelligence” rests on decades of political decisions, infrastructure, research, labour and unequal relations of power. The future of AI cannot be understood without asking whose past made it possible, whose interests shaped it, and whose histories are still missing from the story.',
+      'Conversations about AI often begin with the newest model. This work begins elsewhere: with history. What we now call “intelligence” rests on decades of political decisions, infrastructure, research, labour and unequal relations of power. Its future cannot be understood without asking whose past made it possible—and whose histories remain missing.',
     ],
     reflection: [
       'What disappears when AI is told mainly as a Silicon Valley story?',
-      'Whose work appears in the history of intelligence — and who remains invisible?',
-      'What histories, people or systems would you add to this map?',
+      'Whose work or history would you add to this map?',
     ],
   },
   'future-you': {
@@ -155,18 +148,16 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '1.45 / 1',
     },
     description: [
-      'Future You is an AI digital-twin platform that invites people into conversations with possible versions of their future selves. Rather than predicting the future, Future You is designed to help people reflect on long-term goals, make better decisions today, and strengthen their sense of connection to who they may become. From information provided by the user, the AI system generates “future self memories”, backstories that the model references when speaking to the user.',
-      'Future You grew out of Prof. Pat Pataranutaporn’s doctoral research and thesis on Cyborg Psychology, which explores how AI systems shape human cognition, behaviour, and psychology, and aspires to find ways to encourage human flourishing. It is the product of research and collaboration by researchers within and outside MIT, including Pub and Rachel, who bring their unique perspectives to the project.',
-      'While Future You is a scientific research project that can be historicised in a long lineage of research into future selves that dates back to the 1960s, it is also a cultural project that speaks to our contemporary moment. It offers us a way to navigate the post-contemporary time complex, enabling us to speak to alternative future selves as a way of addressing our present. There are mental health benefits and the promise of an empowering tool for social mobility. It offers us pause and possibly a way out of being mere cogs in larger machines—whether that be the machinery and protocols of society or, more generally, the consumer-facing technologies that can manufacture our desires and impulses.',
+      'Future You is an AI digital-twin platform that invites people into conversations with possible versions of their future selves. From information provided by the user, the system generates “future self memories”: backstories that the model references when speaking to the user.',
+      'The project grew out of Prof. Pat Pataranutaporn’s doctoral research on Cyborg Psychology, which explores how AI systems shape human cognition, behaviour and psychology, and aspires to find ways to encourage human flourishing.',
+      'While Future You can be historicised within a lineage of research into future selves dating to the 1960s, it is also a cultural project that speaks to our contemporary moment. It offers a way to navigate the post-contemporary time complex, enabling us to speak to alternative future selves as a way of addressing the present.',
     ],
     whyNow: [
-      'AI is moving beyond answering questions. It is increasingly being positioned as a coach, confidant and guide: something that can help us plan careers, manage emotions or rehearse difficult conversations.',
-      'At a moment shaped by self-optimisation, manifestation culture and algorithmic prediction, the work asks whether AI might help us think more generously and patiently about our future lives. It also asks what happens when a machine-generated possibility begins to influence the choices through which that future is actually made.',
+      'AI is moving beyond answering questions. It is increasingly positioned as a coach, confidant and guide. At a moment shaped by self-optimisation and algorithmic prediction, Future You asks whether a simulated self might help us think more patiently about our future—or begin to influence the choices through which that future is made.',
     ],
     reflection: [
-      'Did your future self’s advice feel credible?',
-      'Which parts of this imagined future came from your own hopes, and which were introduced by the system?',
-      'Did your future self expand your sense of possibility?',
+      'Which parts of your imagined future came from your hopes, and which came from the system?',
+      'Did the encounter expand your sense of possibility—or narrow it?',
     ],
   },
   impactbench: {
@@ -187,16 +178,15 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '16 / 9',
     },
     description: [
-      'ImpactBench evaluates leading AI systems through an AI Nutrition Label that makes visible their potential impacts on people and society, including dimensions such as accuracy, safety, fairness, learning, well-being, agency, and social relationships. Rather than measuring only technical capability, it helps the public better understand how AI systems may influence human behaviour and cognition.',
-      'Presented here alongside the online research project are speculative cereal boxes that imagine the AI Nutrition Labels from ImpactBench. Developed by Ryan Ho in partnership with Pat Pataranutaporn, Rachel Poonsiriwong, and Chayapatr (Pub) Archiwaranguprok, these objects (affectionately nicknamed CereaLLMs) make physical the findings of the existing research, pointing to how AI is a human utility and the urgency of consensus and literacy around AI.',
+      'ImpactBench evaluates leading AI systems through an AI Nutrition Label that makes visible their potential impacts on people and society, including accuracy, safety, fairness, learning, wellbeing, agency and social relationships. Rather than measuring only technical capability, it helps the public understand how AI systems may influence human behaviour and cognition.',
+      'Presented alongside the online research project are speculative cereal boxes that imagine these AI Nutrition Labels. Developed by Ryan Ho in partnership with Pat Pataranutaporn, Rachel Poonsiriwong and Chayapatr (Pub) Archiwaranguprok, these objects—affectionately nicknamed CereaLLMs—make physical the findings of the research, pointing to how AI is a human utility and to the urgency of consensus and literacy around AI.',
     ],
     whyNow: [
-      'As AI becomes a companion, teacher, adviser and mediator of everyday decisions, accuracy is no longer an adequate measure of quality. A system can provide a factually correct response while making someone less confident, more dependent or more isolated.',
-      'ImpactBench proposes that intelligence should be judged partly by the kind of human relationship it creates. Deciding what counts as wellbeing — and whose wellbeing matters — is an increasingly urgent question.',
+      'As AI becomes companion, teacher and adviser, accuracy is no longer an adequate measure of quality. A system can be factually correct while making someone less confident, more dependent or more isolated. ImpactBench proposes that intelligence should also be judged by the human relationship it creates—and by whose wellbeing it protects.',
     ],
     reflection: [
-      'What should an AI be evaluated on beyond whether its answer is correct?',
-      'Would you choose a less “capable” system if it better protected your autonomy and wellbeing?',
+      'What should an AI be evaluated on beyond whether it is correct?',
+      'Would you choose a less capable system if it better protected your autonomy?',
     ],
   },
   'grace-quek': {
@@ -217,17 +207,17 @@ export const sectionOneArtworks: Record<Extract<ArtworkId, 'safe-entry' | 'histo
       aspect: '16 / 9',
     },
     description: [
-      'In 1997, Grace Quek presented a performance lecture through the persona of Dr Eng Olsen, using human cloning to examine reproduction, appropriation and authenticity in art. Almost three decades later, Quek returns to the work in collaboration with DeepSeek, reworking its questions for an age of generative AI.',
-      'Delivered with the authority of an academic lecture, the performance begins with recognisable art-historical debates: Renaissance workshops, disputed attribution, photographic repetition, museum reproductions and Andy Warhol’s use of existing images.',
-      'Gradually, fact gives way to speculative fiction. Museums secretly clone historical artists. Artificial memories are implanted into resurrected sculptors. A teenage clone of He Xiangning refuses to reproduce her paintings and becomes a drum-and-bass musician. A virtual Andy Warhol completes works that the historical artist never made. The boundary between research, performance and fabrication becomes deliberately unstable.',
+      'Art in the Age of Human Cloning is a performance developed in collaboration with DeepSeek and performed at Padimai Art & Tech Studio on 10 July 2026.',
+      'Revisiting a performance first staged through the persona of Dr Eng Olsen, the work speculates clones of modern artists as content producers and virtual entities, opening questions around authorship, reproduction and authenticity.',
+      'In collaborating with DeepSeek, Quek adopted several rules: the performance, visuals and soundtrack were produced through prompting; defaults were accepted whenever possible; and DeepSeek’s recommendations for other models were followed. Her prompts were produced by DeepSeek, and its preset style was retained to preserve the integrity of the AI’s voice.',
+      'The artwork comprises both the performance and its online documentation, staged here through promotional standees and a QR code leading to the video and Quek’s prompt history.',
     ],
     whyNow: [
-      'AI is often described as a new kind of collaborator — but it is trained on the replication and recombination of existing human work. This lecture asks whether authorship can survive when style, memory and identity can all be simulated.',
-      'The work also asks who controls a copy once it begins to act for itself. A clone may inherit an artist’s name, data or appearance without inheriting their desires. In an era of deepfakes and synthetic personalities, authenticity may no longer mean being original. It may depend on who is speaking, who gets credit, and who has the right to refuse.',
+      'AI is described as a collaborator, yet it is built through the replication and recombination of human work. Quek asks whether authorship survives when style, memory and identity can be simulated—and who controls a copy once it begins to act for itself. Authenticity may increasingly depend on credit, consent and the right to refuse.',
     ],
     reflection: [
-      'At what point does a copy become a new work — or a new person?',
-      'When an artist works with AI, who should receive the credit, responsibility and blame?',
+      'When does a copy become a new work—or a new person?',
+      'When an artist works with AI, who receives the credit, responsibility and blame?',
     ],
   },
 }
@@ -251,19 +241,16 @@ export const sectionTwoArtworks: Record<Extract<ArtworkId, 'altar' | 'traces'>, 
       aspect: '3 / 2',
     },
     description: [
-      'BussyTemple is a Southeast Asian rave collective working across electronic music, performance, visual culture and practices of care. Their gatherings treat queer nightlife as worldbuilding: a space in which bodies, identities and relationships can temporarily be reorganised.',
-      'At the centre of F4NT4SY_H4RD_DR1VE://ALTAR is an open scaffolding structure that functions simultaneously as archive, network and communal altar. Screens hold videos, photographs and contributions gathered across BussyTemple’s history, while physical objects and traces are attached to the structure itself.',
-      'Unlike a conventional archive, the altar is deliberately unfinished. Visitors and community members can continue adding to it, allowing its form and meaning to change over the exhibition. During BussyTemple’s September gathering, the bare structure will be further transformed through materials, messages, images and performance.',
-      'The altar is both record and gathering place: a structure through which the community continues to make itself.',
+      'Established in 2022, Bussy Temple is a Singapore-based queer rave collective that came together in response to a lack of spaces centred on trans, non-binary and femme people within Singapore’s nightlife. Through their practice, they expand our definition of the rave from “nightlife entertainment” into a social, political and aesthetic practice of imagining different ways of living together.',
+      'Their gatherings bring together performance art, community organising and speculative world-building. Manifesting in Islands in the Net as a communal altar to their web archive, the installation invites visitors to explore videos, photographs and community contributions collected over the years.',
+      'Imagined as a growing network rather than an accumulation of historical records, visitors are invited to contribute to this living archive in the lead-up to Bussy Temple’s takeover of the exhibition on 12 September.',
     ],
     whyNow: [
-      'Online platforms promise to preserve everything, yet community histories can remain fragile. Posts disappear, accounts are removed and experiences are flattened into content.',
-      'This altar asks what it means to archive a culture that is embodied, collective and continually changing. It treats parties, friendships, costumes, messages and fleeting encounters as forms of cultural knowledge worth holding onto.',
-      'The installation also resists the idea that an archive must be fixed, orderly or complete. Here, memory remains alive because people can still touch it, contest it and add to it.',
+      'Online platforms promise to preserve everything, yet community histories remain fragile. Posts disappear, accounts are removed and lived experience is flattened into content. This altar treats parties, friendships, costumes and fleeting encounters as forms of cultural knowledge. Memory remains alive because people can touch it, contest it and add to it.',
     ],
     reflection: [
       'What objects, images or rituals hold your community together?',
-      'What deserves to be remembered that conventional archives might overlook?',
+      'What deserves to be remembered that conventional archives might miss?',
     ],
   },
   traces: {
@@ -320,19 +307,15 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
       aspect: '16 / 9',
     },
     description: [
-      'What might your life have looked like if it had unfolded somewhere else in Asia?',
-      'Developed from Weiwei Xu’s earlier project Chinamaxxing, this participatory photobooth generates an alternative version of your “Asian life.” Your image becomes the starting point for a speculative biography shaped through computational storytelling, popular imagery and assumptions about identity, place and possibility.',
-      'The title borrows the internet suffix “-maxxing” — used online to describe the deliberate optimisation or performance of an identity. It also refers to recent social-media fascination with imagined Asian lifestyles, aesthetics and social values.',
-      'The resulting life is a constructed fiction, assembled from algorithmic patterns, cultural stereotypes and the participant’s own projections.',
+      'Coined by evolutionary biologist Richard Dawkins in 1976, the meme describes a unit of cultural transmission: an idea, image, behaviour or fashion that is imitated and transformed as it circulates. Internet memes are its contemporary manifestation, spreading rapidly through digital platforms. Their cultural power lies in their ability to make ideas visible, repeatable and difficult to ignore.',
+      '*ASIA MAXXING* references Chinamaxxing, a viral trend that emerged in 2025 in which non-Chinese people adopted aspects of everyday Chinese life as lifestyle upgrades, wellness practices or critiques of Western society. Presented as a photobooth, the web application imagines a future regional bureaucracy through which users can generate speculative accounts of lives they might have lived in India, Indonesia, China or the Philippines.',
+      'Its narratives rely on the generic language of large language models and on a framework developed by Sprout, Hsu’s start-up, using questions inspired by online personality tests. By exposing these mechanisms, the work invokes the Forer effect: the tendency to perceive vague, general descriptions as uniquely accurate.',
     ],
     whyNow: [
-      'AI can create convincing stories and identities. Yet these narratives are assembled from patterns in existing data that carry assumptions about race, gender, class, nationality and what an “Asian life” is supposed to look like.',
-      'At the same time, “Asia” itself is far from a single, stable identity. It is a vast and contested idea, shaped differently by people living within the region, its diasporas and those viewing it from elsewhere. This work makes this construction visible. Its alternate life may feel exciting, recognisable or absurd.',
-      'Its real subject is the system imagining you: the data, stereotypes and desires used to construct an “Asian life”.',
+      'AI can produce convincing identities from data that carries assumptions about race, gender, class and nationality. Yet “Asia” is not a single, stable identity, but a contested idea shaped from within the region, its diasporas and elsewhere. The work makes those constructions visible: its real subject is the system imagining you.',
     ],
     reflection: [
-      'What assumptions did the experience make about Asia, and about you?',
-      'Which parts felt culturally specific, and which felt like stereotype?',
+      'What assumptions did the experience make about Asia—and about you?',
       'Who gets to decide what an “Asian future” looks like?',
     ],
   },
@@ -355,15 +338,11 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
       aspect: '1 / 1',
     },
     description: [
-      'Hexagram Today translates the ancient Chinese divination system of the I Ching, or Book of Changes, into a contemporary digital interface.',
-      'The I Ching is organised around 64 hexagrams: figures composed of broken and unbroken lines whose changing arrangements are interpreted in relation to a question or situation. Its texts offer no fixed forecast. They invite reflection on change, uncertainty, timing and the relationships between different forces.',
-      'Weiwei Xu brings this cosmological system into conversation with the computational systems through which people now seek guidance. In place of tossed coins, yarrow stalks or a human interpreter, visitors encounter divination through a screen.',
-      'The work places an old predictive technology inside a new one — inviting us to consider what has changed, and what has not, in our desire to make uncertainty legible.',
+      'After three years of study with an *I Ching* master, Hsu developed *ICHING HEXAGRAM*, a divination app that brings machine learning into conversation with ancient Chinese wisdom. Imagined as an alternative to popular astrology apps such as Co–Star, it seeks to make Eastern philosophies accessible to a wider audience.',
+      'The *I Ching* is an ancient Chinese divination text that has influenced mathematics, cybernetics, information theory and digital computation. It also informed Carl Jung’s concept of synchronicity: events that are meaningfully, rather than causally, connected. *ICHING HEXAGRAM* proposes fate as an interface for managing complexity, situating AI within a longer global history of rule-based knowledge production and meaning-making.',
     ],
     whyNow: [
-      'Algorithms already tell us what to watch, where to go, who to meet and what may happen next. These predictions are often presented as objective and based on “data”.',
-      'The I Ching offers a different relationship to prediction. Its answers are poetic, ambiguous and dependent upon interpretation. It does not simply claim to calculate the future; it asks the reader to examine their own position within a changing situation.',
-      'This work asks whether uncertainty and alternative forms of cultural wisdom are something technology should eliminate, or something we can build on.',
+      'Algorithms already tell us what to watch, where to go and what may happen next, often presenting prediction as objective because it is data-driven. The I Ching offers another relationship to the future: poetic, ambiguous and dependent on interpretation. It asks whether uncertainty is something technology should eliminate—or something we can learn to inhabit.',
     ],
     reflection: [
       'Why might advice feel more trustworthy when it appears on a screen?',
@@ -389,36 +368,37 @@ export const sectionThreeArtworks: Record<Extract<ArtworkId, 'asia-maxxing' | 'h
       aspect: '16 / 9',
     },
     description: [
-      'XO is an archive from a Southeast Asia that does not exist—but might.',
-      'The work follows a group of “xenographers” from Nusanatra returning from Nooantara, a parallel world where mind and body, land and water, and physical and virtual life are not treated as opposites. Objects, moving images and a monumental mask appear as fragments from this world, catalogued for a collective history.',
-      'Its mythology folds together the noosphere—a realm of shared thought—with Sutan Takdir Alisjahbana’s Bumantara, an idea of Southeast Asia as interconnected “lands between.”',
-      'Even the central mask refuses a stable identity. It is called the Flaming Knotted Heart, the Apparatus and the Ongoing Processing Intake System. Each name changes what the object can be—and what kind of world the archive allows us to see.',
+      'The exhibition culminates in Fyerool Darma’s XO, an extension of his ongoing work kædæluwær§æk§§æk (A Xenographer’s Index), first presented at the Malay Heritage Centre, Singapore.',
+      'Imagining an expedition into n**antara, a parallel world of the Nusantara, the installation unfolds as a cinematic and virtual double of Padimai’s physical exhibition space. Here, a worker responds to an AI job listing for a “Memory Diver” and enters a process of extraction. Narrated by a butterfly that remains in a room that no longer exists, the work asks what survives a system built to turn everything it encounters into data.',
+      'XO includes a film, artefacts, a historical archive and library that trace the emergence of Southeast Asian Futurism from the 1970s through the work of Sutan Takdir Alisjahbana to contemporary theory by Singapore futurists such as Lee Chor Pharn.',
+      'Invoking older forms of archipelagic connectivity alongside emergent networks of technological and informational interdependence, XO expands the historical idioms of Southeast Asian Futurism to include a critical appraisal of data, heritage and ontology.',
     ],
     whyNow: [
-      'Most technological futures inherit the same oppositions: nature or machine, body or data, real or virtual, tradition or progress. XO reorganises these familiar categories through different intellectual and cultural histories. Its future begins from a different set of assumptions.',
-      'A database, museum or archive does not only store reality. Through its labels, it helps produce it.',
+      'Most technological futures inherit familiar oppositions: nature or machine, body or data, tradition or progress. XO reorganises these categories through different intellectual and cultural histories. It also reminds us that a database, museum or archive does not merely store reality. Through its classifications, it helps produce it.',
     ],
     reflection: [
-      'Which boundary in your own life feels too rigid: human and machine, real and virtual, nature and technology, or past and future?',
-      'What might become possible if that boundary loosened?',
+      'Which boundary feels too rigid: human and machine, real and virtual, nature and technology, or past and future?',
+      'What might become possible if it loosened?',
     ],
   },
 }
 
 export const commonsContent = {
   title: 'THE\nCOMMONS',
-  deck: 'The Commons centres the encounters between people: conversations, disagreements, pauses and contributions.',
+  deck: 'The Commons is the shared centre of the exhibition. The space itself is complete, but what it holds will continue to change as people pass through it.',
   paragraphs: [
-    'The low seats, cushions, tables, questions and voting wall arrange the room for conversation, disagreement, reconsideration and unstructured time.',
-    'In a conventional exhibition, visitors are expected to move from one artwork to the next. Here, stopping is also participation. Your attention, conversations and contributions become part of the changing life of the room.',
-    'The public poll offers a visible snapshot, not a final answer. Each cluster of stickers records both a collective position and the limits of the question: who participated, who hesitated and what nuance disappeared between the available choices?',
-    'A commons does not require consensus. It is something people continually negotiate through difference, responsibility, generosity and care.',
+    'Its low seats, cushions, tables and public questions create room for something less predictable than another artwork encounter: sitting, reading, writing, drawing, talking, listening, disagreeing, reconsidering—or simply spending time together.',
+    'In most exhibitions, visitors are expected to move from one work to the next. Here, stopping is also a form of participation. Notes, drawings and reflections accumulate over time. You may encounter something left by a stranger, add a response of your own, or leave behind a question for whoever arrives next.',
+    'The Commons holds questions rather than final answers. What should technology help us know? What should remain private, uncertain or human? What do our data traces reveal—and what can they never capture? What kinds of technological futures should we protect, refuse or imagine differently?',
+    'A commons is not made by everyone reaching agreement. It is continually shaped through difference, curiosity, responsibility and care. In this sense, the room is never quite complete without the people who inhabit it—and is remade by each person who enters.',
   ],
+  reflectionLead: 'A community is more than a group of people sharing the same space. It begins with what they are willing to question, hold and imagine together.',
   tryThis: [
-    'Stay past your first impulse to move on.',
-    'Vote, then return to your answer later.',
-    'Speak with someone who chose differently.',
-    'Leave a thought for the next person.',
+    'Stay for longer than feels necessary.',
+    'Read something left by a stranger.',
+    'Follow a thought that unsettles you.',
+    'Add a response, drawing or question of your own.',
+    'Leave something for whoever arrives next.',
   ],
 }
 
@@ -426,10 +406,9 @@ export const readingRoomContent = {
   title: 'READING ROOM &\nRESEARCH ARCHIVE\nOF SOUTHEAST ASIAN\nFUTURES',
   deck: 'The archive is unfinished. So is the future.',
   paragraphs: [
-    'Most visions of the future arrive already branded. They are produced by technology companies, circulated globally and presented as though everyone is travelling to the same destination.',
-    'The room gathers a counter-archive of Southeast Asian experiments in modernity, ecology, networks and collective life—evidence that the region has long imagined technological change on its own terms.',
-    'These histories show that networks existed before the internet, and that questions now associated with AI—about knowledge, power, ecological crisis and collective life—have much deeper roots.',
-    'Recovering these histories widens the material from which the future can be made.',
+    'Most visions of the future arrive already branded: produced by technology companies, circulated globally and presented as though everyone is travelling towards the same destination.',
+    'This room gathers a counter-archive of Southeast Asian experiments in modernity, ecology, networks and collective life. It shows that the region has long imagined technological change on its own terms—and that today’s questions about AI, knowledge, power and ecological crisis have deeper histories.',
+    'Recovering those histories widens the material from which futures can be made.',
   ],
   browsingCues: [
     'Pick up something outside your usual field.',
@@ -438,17 +417,16 @@ export const readingRoomContent = {
   ],
   reflectionQuestions: [
     'Whose future is missing from this archive?',
-    'Which idea here deserves to be put back into circulation?',
-    'What history, person or publication would you add?',
+    'What idea, history or publication should be put back into circulation?',
   ],
 }
 
 export const closingContent = {
   title: 'CONTINUE?',
   paragraphs: [
-    'You began with the self: how technology speaks back to us, measures us and rehearses who we might become. The view then widened to communities and shared memory, before turning to the histories and beliefs from which Southeast Asian futures are made.',
-    'These scales are inseparable. Personal choices become collective patterns. Communities inherit histories. Every imagined future elevates some values, voices and ways of living over others.',
-    'The future is not waiting somewhere else. It is being produced now—by the systems we use, the stories we repeat and the relationships we choose to sustain.',
+    'You began with the self: how technology speaks back, measures us and rehearses who we might become. The view widened to shared memory, then to the histories and beliefs from which Southeast Asian futures are made.',
+    'These scales are inseparable. Personal choices become collective patterns; communities inherit histories; every imagined future elevates some values and ways of living over others.',
+    'The future is being produced now—through the systems we use, the stories we repeat and the relationships we sustain.',
   ],
   questions: [
     'What do you want technology to help us become?',

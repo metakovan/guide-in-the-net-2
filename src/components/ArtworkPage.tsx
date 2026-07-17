@@ -17,6 +17,18 @@ function MultilineText({ text }: { text: string }) {
   )
 }
 
+function InlineText({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/(\*[^*]+\*)/g).map((part, index) => (
+        part.startsWith('*') && part.endsWith('*')
+          ? <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>
+          : part
+      ))}
+    </>
+  )
+}
+
 function reflectionOrder(artwork: ArtworkContent, index: number) {
   const sectionBase = artwork.sectionLabel === 'YOU AND THE NET'
     ? 1000
@@ -96,18 +108,13 @@ export default function ArtworkPage({ artwork }: Props) {
 
       <div className="artwork-editorial">
         <section className="artwork-opening artwork-scroll-target" id={`${artwork.id}-about`}>
-          <p className="artwork-deck">{lead}</p>
+          <p className="artwork-deck"><InlineText text={lead} /></p>
           <div className="artwork-body">
             {body.map((paragraph, index) => (
-              <p key={paragraph} style={{ '--reveal-index': index } as CSSProperties}>{paragraph}</p>
+              <p key={paragraph} style={{ '--reveal-index': index } as CSSProperties}><InlineText text={paragraph} /></p>
             ))}
           </div>
         </section>
-
-        <blockquote className="artwork-pullquote">
-          <span aria-hidden="true">“</span>
-          <p>{artwork.pullQuote}</p>
-        </blockquote>
 
         <section className="artwork-context artwork-scroll-target" id={`${artwork.id}-why-now`}>
           <div className="artwork-context-head">
@@ -119,11 +126,15 @@ export default function ArtworkPage({ artwork }: Props) {
           </div>
         </section>
 
+        <blockquote className="artwork-pullquote">
+          <p>{artwork.pullQuote}</p>
+        </blockquote>
+
         <section className="reflection-block artwork-scroll-target" id={`${artwork.id}-reflect`}>
           <p className="reflection-kicker">PAUSE &amp; REFLECT</p>
-          <p className="reflection-response-invitation">Tap any question to leave a short, private response.</p>
+          <p className="reflection-response-invitation">Optional: choose one question to answer privately.</p>
           <ReflectionResponseList items={reflectionItems} />
-          <p className="reflection-storage-note">OPTIONAL · SAVED ONLY ON THIS DEVICE</p>
+          <p className="reflection-storage-note">PRIVATE · SAVED ON THIS DEVICE</p>
         </section>
 
         <footer className="artwork-endmark" aria-hidden="true">

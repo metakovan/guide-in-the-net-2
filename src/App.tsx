@@ -55,10 +55,9 @@ type TextSize = 'small' | 'standard' | 'large'
 type ColourMode = 'standard' | 'red-green-safe' | 'blue-yellow-safe' | 'high-contrast'
 
 const introParagraphs = [
-  'Technology no longer sits outside everyday life. It recommends what we watch, verifies who we are, speaks in our voices and increasingly helps decide how we work, move and imagine the future.',
-  'Most stories about these systems still arrive from technology companies: faster, smarter, frictionless, inevitable. Islands in the Net begins somewhere else.',
-  'The exhibition takes its name from Bruce Sterling’s 1988 cyberpunk novel, which imagined Singapore as a node in a new global network of data and influence. Nearly four decades later, we return to that image from Southeast Asia.',
-  'Here, the islands form an archipelago: distinct histories, cultures and ways of knowing, connected by uneven flows of people, capital and information.',
+  'Technology now shapes what we see, how we work, who we are and how we imagine what comes next. Yet the loudest stories about it still come from commercial platforms, told through promises of frictionless progress and technological inevitability.',
+  'Islands in the Net exists to host a different kind of conversation. Taking its name from Bruce Sterling’s 1988 cyberpunk novel, the exhibition returns to Singapore’s place within a global network from a Southeast Asian perspective: not as an isolated island, but as part of an archipelago of distinct histories, communities and ways of knowing, connected by shifting flows of people, culture, capital and information.',
+  'Many of the works here are data-native. They do not simply depict technology; they use, generate, exchange or resurrect data to reveal overlooked histories and produce possible futures. Together, they ask us to look beyond the future we are being sold—and consider what other futures might be made, by whom, and for whom.',
 ]
 
 const guideActions = [
@@ -72,31 +71,31 @@ const guideActions = [
     icon: '/guide/assets/form-thoughts.png',
     iconHeight: '60px',
     label: 'TAKE A POSITION',
-    text: 'Form your own view. Change it if the work gives you reason.',
+    text: 'Form a view. Let the work change it.',
   },
   {
     icon: '/guide/assets/converse.png',
     iconHeight: '70px',
     label: 'JOIN IN',
-    text: 'Talk with someone, vote, or leave a thought for whoever comes next.',
+    text: 'Talk, vote or leave a thought for the next visitor.',
   },
   {
     icon: '/guide/assets/reflect.png',
     iconHeight: '95px',
     label: 'PAUSE',
-    text: 'Sit, listen, read, write—or do nothing for a while.',
+    text: 'Sit, listen, read, write—or simply stop.',
   },
   {
     icon: '/guide/assets/return.png',
     iconHeight: '108px',
     label: 'RETURN',
-    text: 'Return after dark for screenings, performances, talks and late-night takeovers.',
+    text: 'Come back after dark for screenings, performances and takeovers.',
   },
   {
     icon: '/guide/assets/share.png',
     iconHeight: '118px',
     label: 'SHARE, OR DON’T',
-    text: 'Photograph and post, remix, or keep the experience offline. Feed the algorithm with #IslandsInTheNetSG',
+    text: 'Post, remix, or keep it offline. Feed the algorithm with #IslandsInTheNetSG.',
   },
 ]
 
@@ -400,7 +399,7 @@ export default function App() {
                 ))}
               </div>
               <p className="closing-invitation">
-                Take any route through the exhibition. Let the questions remain open. Linger, disagree, change your mind and leave something behind.
+                Take any route. Let the questions remain open.
               </p>
             </article>
           </AppShell>
